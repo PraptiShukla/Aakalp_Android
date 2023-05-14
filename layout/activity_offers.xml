@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Offers">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Offers"
+                android:textColor="@color/grad2"
+                android:textSize="150px"
+                android:textStyle="bold"
+                android:shadowColor="@color/grad2"
+                android:shadowRadius="30"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:id="@+id/kuber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Kuber"
+                            android:textColor="@android:color/black"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/kdes"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/kuber"
+                            android:text="Invest atleast Rs.1000 per month and you will get any gold item after completing 12 months according each month rate."
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/kdes"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="149dp"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/line"
+                            android:text="Start Date: 01-01-2023        End Date: 31-12-2024"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/date"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/line1"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/navbar"
+                            android:text="Apply...."
+                            android:textSize="10dp"
+                            android:onClick="buttonClicked"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:id="@+id/dipotsav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Dipotsav"
+                            android:textColor="@android:color/black"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/ddes"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dipotsav"
+                            android:text="On the special occasion of diwali get 3% off on gold making charges and some diamond making charges."
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/line01"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/ddes"
+                            android:layout_marginTop="24dp"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/date01"
+                            android:layout_width="149dp"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/line01"
+                            android:text="Start Date: 01-11-2023        End Date: 30-11-2024"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/line02"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/date01"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <Button
+                            android:id="@+id/submit01"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/line02"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/navbar"
+                            android:text="Apply...."
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:id="@+id/raupya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Raupya Mahotsav"
+                            android:textColor="@android:color/black"
+                            android:textSize="25dp"/>
+
+                        <TextView
+                            android:id="@+id/rdes"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/raupya"
+                            android:text="Get 10% bumper discount on any silver item."
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/line11"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/rdes"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/date02"
+                            android:layout_width="149dp"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/line11"
+                            android:text="Start Date: 01-05-2023        End Date: 31-05-2024"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/line12"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/date02"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <Button
+                            android:id="@+id/submit02"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/line12"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/navbar"
+                            android:text="Apply...."
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:id="@+id/shagun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Shagun"
+                            android:textColor="@android:color/black"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/sdes"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shagun"
+                            android:text="Design your special memories with 5% discount on any bridal sets."
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/line21"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/sdes"
+                            android:layout_marginTop="14dp"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/date03"
+                            android:layout_width="149dp"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/line21"
+                            android:text="Start Date: 01-04-2023        End Date: 31-07-2023"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/line22"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/date03"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <Button
+                            android:id="@+id/submit03"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/line22"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/navbar"
+                            android:text="Apply...."
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Upcoming Events"
+                android:textColor="@color/grad2"
+                android:textSize="120px"
+                android:textStyle="bold"
+                android:shadowColor="@color/grad2"
+                android:shadowRadius="30"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:id="@+id/akshaya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Akshaya"
+                            android:textColor="@android:color/black"
+                            android:textSize="25dp"/>
+
+                        <TextView
+                            android:id="@+id/ades"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/akshaya"
+                            android:text="On one of the muhurat of Akshay Tritiya get 2% off on pure 22K and 24K gold, whole week."
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/line31"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/ades"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/date04"
+                            android:layout_width="149dp"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/line31"
+                            android:text="Start Date: 16-04-2023        End Date: 23-04-2024"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/line32"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/date04"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <Button
+                            android:id="@+id/submit04"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/line32"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/navbar"
+                            android:text="Apply...."
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="272dp"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:id="@+id/gurupushya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Gurupushya"
+                            android:textColor="@android:color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/gdes"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gurupushya"
+                            android:text="Gurupushyamrut is also one of special muhurta, Get 5% discount on every item on this day."
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <View
+                            android:id="@+id/line41"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/gdes"
+                            android:layout_marginTop="14dp"
+                            android:background="#c0c0c0"/>
+
+                        <TextView
+                            android:id="@+id/date05"
+                            android:layout_width="149dp"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/line41"
+                            android:text="Start Date: 25-08-2023        End Date:  25-08-2023"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/line42"
+                            android:layout_width="130dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/date05"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+
+                        <Button
+                            android:id="@+id/submit05"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/line42"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/navbar"
+                            android:text="Apply...."
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="450dp"
+                android:layout_height="30dp"
+                android:background="@color/navbar"
+                android:text="© 2023 Copyright: Aakalp.com"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

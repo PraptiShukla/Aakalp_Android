@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Aakalp"
+        android:textStyle="bold"
+        android:textColor="@color/textbody"
+        android:textSize="150px"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:shadowColor="@color/shadow"
+        android:shadowRadius="60"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:padding="20dp"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="30dp"
+        android:text="Login"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="180px"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="30dp"
+        android:text="New User wants to sign up?"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:text="Error while logging in!!!"
+        android:textColor="#F44336"
+        android:layout_below="@id/newuser"
+        android:visibility="gone"
+        android:layout_marginStart="430px"
+        android:layout_marginTop="10px" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="20sp"
+        android:layout_below="@id/error"
+        android:layout_marginStart="430px"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/google"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/newuser"/>
+
+    <ImageView
+        android:id="@+id/whatsapp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/whatsapp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/newuser"/>
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/email"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/newuser"/>
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/facebook"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/newuser"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Status">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+    <ViewFlipper
+    android:id="@+id/carousel"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:flipInterval="3700"
+    android:autoStart="true"
+    android:inAnimation="@android:anim/slide_in_left"
+    android:outAnimation="@android:anim/slide_out_right"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+
+    <ImageView
+        android:id="@+id/carone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/carone" />
+
+    <ImageView
+        android:id="@+id/cartwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cartwo" />
+
+    <ImageView
+        android:id="@+id/carthree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/carthree" />
+</ViewFlipper>
+
+    <GridLayout
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8"
+        android:layout_below="@+id/carousel"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/necklace"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/none"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bnecklace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Necklaces"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/earrings"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/e1"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/bearrings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Earrings"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rings"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/r1"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/brings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Rings"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bridal"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/b1"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/bbridal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Bridal Sets"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bangles"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ba1"
+            android:layout_row="2"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bbangles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Bangels"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/maharashtrian"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/c1"
+            android:layout_row="2"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/bmaharashtrian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Maharashtrian Style"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/mangalsutra"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/m1"
+            android:layout_row="3"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bmangalsutra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Mangalsutra"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/latest"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mo1"
+            android:layout_row="3"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/blatest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Latest Style"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/thali"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/p1"
+            android:layout_row="4"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bthali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Thali"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/frames"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/f1"
+            android:layout_row="4"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/bframes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Frames and Decors"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/puja"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/t1"
+            android:layout_row="5"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bpuja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Puja Thali"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/baby"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/by1"
+            android:layout_row="5"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/bbaby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Baby gifts"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/silverj"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/sj1"
+            android:layout_row="6"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bsilverj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Silver Jewellery"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/anklets"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/a1"
+            android:layout_row="6"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/banklets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Anklets"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/idols"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/i1"
+            android:layout_row="7"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bidols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Idols"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/coins"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cb1"
+            android:layout_row="7"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/bcoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:text="Coins and Bars"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+            <ImageView
+                android:id="@+id/offimg"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/offer"
+                android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="30dp"
+            android:background="@color/navbar"
+            android:text="© 2023 Copyright: Aakalp.com"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

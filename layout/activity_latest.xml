@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".latest">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Latest Style"
+                android:textColor="@color/grad2"
+                android:textSize="100px"
+                android:textStyle="bold"
+                android:shadowColor="@color/grad1"
+                android:shadowRadius="30"/>
+
+            <GridLayout
+                android:id="@+id/litems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="8"
+                android:layout_below="@+id/sdes"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/lat1"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/l01"
+                    android:layout_row="0"
+                    android:layout_column="0"/>
+
+                <TextView
+                    android:id="@+id/l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Earrings"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/l01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="60dp"
+                    android:text="Rs.4400"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_height="35dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="45dp"
+                    android:text="purchase"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/b01"
+                    android:layout_height="35dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginStart="38dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/lat2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/l03"
+                    android:layout_marginStart="10dp"
+                    android:layout_row="0"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:id="@+id/l2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Earrings"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/l02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="50dp"
+                    android:text="Rs.2500"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_height="35dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="40dp"
+                    android:text="purchase"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/b02"
+                    android:layout_height="35dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/lat3"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/l04"
+                    android:layout_row="1"
+                    android:layout_column="0"/>
+
+                <TextView
+                    android:id="@+id/n3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Necklace"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/l03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="55dp"
+                    android:text="Rs.5000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_height="35dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="45dp"
+                    android:text="purchase"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/b03"
+                    android:layout_height="35dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginStart="38dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/lat4"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/l05"
+                    android:layout_row="1"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:id="@+id/l4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Necklace"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/l04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="50dp"
+                    android:text="Rs.11000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_height="35dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="40dp"
+                    android:text="purchase"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/b04"
+                    android:layout_height="35dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginStart="33dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/mybutton"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </GridLayout>
+            <TextView
+                android:layout_width="450dp"
+                android:layout_height="30dp"
+                android:background="@color/navbar"
+                android:text="© 2023 Copyright: Aakalp.com"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

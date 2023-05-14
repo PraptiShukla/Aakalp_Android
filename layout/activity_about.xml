@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".about">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="About Us"
+            android:textColor="@color/grad2"
+            android:textSize="130px"
+            android:textStyle="bold"
+            android:shadowColor="@color/grad2"
+            android:shadowRadius="30"/>
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="330dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Aakalp"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="130px"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:shadowRadius="30"
+            android:background="@color/navbar"/>
+
+        <TextView
+            android:id="@+id/offer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="         Jewellers are skilled craftsmen who design, create, and repair jewelry. They work with a wide range of materials, including precious metals such as gold, silver, and platinum, as well as gemstones, pearls, and other decorative elements. Jewellers may work for jewelry manufacturers, wholesalers, or retailers, or they may operate their own independent businesses.  They typically use a variety of tools and techniques to create their jewelry designs, including soldering, casting, engraving, and polishing. Jewellers may specialize in specific types of jewelry, such as engagement rings or custom pieces, or they may work with a wide range of styles and designs.
+They may also offer additional services such as appraisals, repair work, and cleaning and maintenance of jewelry. To become a jeweler, one must have a combination of technical skills and artistic ability. Many jewelers undergo formal training through apprenticeships or trade schools, where they learn the various techniques and tools needed to create jewelry. Overall, jewellers play an essential role in the jewelry industry, bringing creativity and skill to the process of designing and crafting beautiful pieces of jewelry.
+"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:fontFamily="cursive"
+            android:background="@color/navbar"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/a1"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:src="@drawable/manfact"/>
+
+            <ImageView
+                android:id="@+id/a2"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:src="@drawable/manfact1"/>
+
+            <ImageView
+                android:id="@+id/a3"
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:src="@drawable/manfact2"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="30dp"
+            android:background="@color/navbar"
+            android:text="© 2023 Copyright: Aakalp.com"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
