@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Item1"
+        android:title="Home"/>
+    <item android:id="@+id/Item2"
+        android:title="Offers"/>
+    <item android:id="@+id/Item3"
+        android:title="Items"/>
+    <item android:id="@+id/Item4"
+        android:title="Sets"/>
+    <item android:id="@+id/Item5"
+        android:title="About Us "/>
+    <item android:id="@+id/Item6"
+        android:title="Logout"/>
+
+</menu>

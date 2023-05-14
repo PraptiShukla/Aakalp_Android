@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aakalp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".coins"
+            android:exported="false" />
+        <activity
+            android:name=".idols"
+            android:exported="false" />
+        <activity
+            android:name=".anklets"
+            android:exported="false" />
+        <activity
+            android:name=".silverj"
+            android:exported="false" />
+        <activity
+            android:name=".Baby"
+            android:exported="false" />
+        <activity
+            android:name=".Puja"
+            android:exported="false" />
+        <activity
+            android:name=".frames"
+            android:exported="false" />
+        <activity
+            android:name=".thali"
+            android:exported="false" />
+        <activity
+            android:name=".latest"
+            android:exported="false" />
+        <activity
+            android:name=".mangalsutra"
+            android:exported="false" />
+        <activity
+            android:name=".maharashtrian"
+            android:exported="false" />
+        <activity
+            android:name=".bangles"
+            android:exported="false" />
+        <activity
+            android:name=".bridal"
+            android:exported="false" />
+        <activity
+            android:name=".Rings"
+            android:exported="false" />
+        <activity
+            android:name=".Earrings"
+            android:exported="false" />
+        <activity
+            android:name=".Necklace"
+            android:exported="false" />
+        <activity
+            android:name=".purchase"
+            android:exported="false" />
+        <activity
+            android:name=".about"
+            android:exported="false" />
+        <activity
+            android:name=".Sets"
+            android:exported="false" />
+        <activity
+            android:name=".Offers"
+            android:exported="false" />
+        <activity
+            android:name=".offers"
+            android:exported="false" />
+        <activity
+            android:name=".ALogin"
+            android:exported="false" />
+        <activity
+            android:name=".Status"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="message/rfc822" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
